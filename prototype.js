@@ -46,10 +46,10 @@ $(document).ready(
 				var value = document.getElementById('test').value;
 				
           			if(value.match(isValidEmail)) {
-						$("#emailStat").html('<img src=resource/available.png><font color=GREEN> Valid Email!</font>');
+						$("#emailStat").html('<font color=GREEN> Valid Email!</font>');
 					}
 					else {
-						$("#emailStat").html('<img src=resource/cross-mark.png><font color=RED> Invalid Email !!</font>');
+						$("#emailStat").html('<font color=RED> Invalid Email !!</font>');
 					}
 			});
   })
@@ -63,11 +63,11 @@ $(document).ready(function() {
 		
 		if((username.match(isAlphaNumeric))&&(username.length>=5)&&(username.length<=12))
 		 {
-				$("#usernameStat").html('<img src=resource/available.png><font color=GREEN>Username Valid!</font>');
+				$("#usernameStat").html('<font color=GREEN>Username Valid!</font>');
 		}else
 		{
 			
-		$("#usernameStat").html('<img src=resource/cross-mark.png><font color=RED>Invalid Username! only numbers and letters are allowed,minimum of 5 characters and maximum of 12 characters.</font>');	
+		$("#usernameStat").html('<font color=RED>Invalid Username! only numbers and letters are allowed,minimum of 5 characters and maximum of 12 characters.</font>');	
 		}
 
 });
@@ -82,10 +82,10 @@ $(document).ready(function() {
 		
 		if(intNum.match(isInteger))
 		 {
-			$("#intStat").html('<img src=resource/available.png><font color=GREEN>Valid integer</font>');
+			$("#intStat").html('<font color=GREEN>Valid integer</font>');
 		}else
 		{
-		$("#intStat").html('<img src=resource/cross-mark.png><font color=RED>Invalid integer</font>');	
+		$("#intStat").html('<font color=RED>Invalid integer</font>');	
 		}
 
 });
